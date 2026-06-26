@@ -145,7 +145,7 @@ export default async function handler(req, res) {
 
   // ===== Validate =====
   const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!firstName || !lastName || !jobTitle || !privacy || !emailRe.test(email)) {
+  if (!firstName || !lastName || !privacy || !emailRe.test(email)) {
     return res.status(422).json({ success: false, error: 'Campi mancanti o non validi' });
   }
   const selectedTagName = WEBINAR_DATES[date];

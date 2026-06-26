@@ -56,8 +56,7 @@
      in /fonts/ e linkare qui sotto.
      ========================================================= -->
 <style>
-  /* @font-face per Gilroy (DA ATTIVARE quando i file font sono caricati sul server) */
-  /*
+  /* @font-face per Gilroy — ATTIVO. Carica i 4 file .woff2 in /fonts/ perché si veda davvero. */
   @font-face {
     font-family: 'Gilroy';
     src: url('/fonts/Gilroy-Regular.woff2') format('woff2');
@@ -78,7 +77,6 @@
     src: url('/fonts/Gilroy-RegularItalic.woff2') format('woff2');
     font-weight: 400; font-style: italic; font-display: swap;
   }
-  */
 
   /* =========================================================
      MLC BRAND TOKENS
@@ -1182,6 +1180,29 @@
   .speaker h2 .li-link svg { width: 26px; height: 26px; display: block; }
   .speaker h2 .li-link:hover { opacity: 0.7; transform: translateY(-1px); }
 
+  /* Contesto podcast sotto l'eyebrow */
+  .eyebrow-note { font-size: 14px; color: var(--mlc-grey-3); margin: 0 0 18px; max-width: 520px; line-height: 1.4; }
+
+  /* Free badge + add to calendar nella form card */
+  .hero-form .form-event-free {
+    display: inline-block; margin-top: 10px;
+    font-size: 11px; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--mlc-black); background: var(--mlc-yellow);
+    padding: 4px 10px; border-radius: 100px;
+  }
+  .cal-link {
+    display: inline-block; margin-top: 14px;
+    font-size: 13px; font-weight: 700; color: var(--mlc-black);
+    border-bottom: 1.5px solid var(--mlc-yellow);
+  }
+  .cal-link:hover { border-color: var(--mlc-black); text-decoration: none; }
+
+  /* CTA intermedia */
+  .mid-cta { background: var(--mlc-yellow); text-align: center; padding: 64px 0; }
+  .mid-cta h2 { font-size: clamp(24px, 3vw, 34px); color: var(--mlc-black); margin: 0 auto 26px; max-width: 720px; }
+  .mid-cta .cta-primary { background: var(--mlc-black); color: var(--mlc-white); }
+  .mid-cta .cta-primary:hover { box-shadow: 0 8px 0 -2px var(--mlc-grey-3); }
+
   /* Placeholder foto speaker (finché non c'è il file ufficiale in /assets) */
   .photo-placeholder {
     width: 100%;
@@ -1237,23 +1258,24 @@
   <div class="container">
     <div class="hero-text">
       <span class="eyebrow">MLC Podcast</span>
+      <p class="eyebrow-note">The MLC series where Maurizio interviews international authors — this episode, live.</p>
       <h1>
         Emotional intelligence: the skill behind every conversation that works.
       </h1>
 
       <p class="lede">
         Maurizio La Cava interviews <strong>Joshua Freedman</strong>, one of the world's foremost
-        experts on emotional intelligence. What it is, why it matters for communication, how to
-        train it.
+        experts on emotional intelligence. Walk away able to read the room, listen with intent, and
+        make your next conversation — or pitch — actually land.
       </p>
 
       <div class="topics-list">
         <p class="topics-heading">What you'll discover</p>
         <ul>
-          <li><span class="topic-name">What emotional intelligence really is</span></li>
-          <li><span class="topic-name">The "Emotional Recession": why global EQ is declining</span></li>
-          <li><span class="topic-name">Emotions, trust and decisions: what the data says</span></li>
-          <li><span class="topic-name">How to train emotional intelligence</span></li>
+          <li><span class="topic-name">How to read people and listen so they actually open up</span></li>
+          <li><span class="topic-name">Why emotional intelligence is the edge AI can't replace — and how to use it</span></li>
+          <li><span class="topic-name">The "Emotional Recession": turning a global trend into your advantage</span></li>
+          <li><span class="topic-name">A practical way to train your EQ, starting this week</span></li>
         </ul>
       </div>
     </div>
@@ -1264,6 +1286,7 @@
         <div class="form-event">
           <div class="form-event-date">Wednesday, July 15, 2026</div>
           <div class="form-event-time">17:00 – 18:00 (CEST) · Microsoft Teams</div>
+          <span class="form-event-free">Free live session</span>
         </div>
 
         <form id="webinarForm" novalidate>
@@ -1280,8 +1303,8 @@
             <input type="email" id="email" name="email" autocomplete="email" required />
           </div>
           <div class="form-row">
-            <label for="jobTitle">Role <span class="req">*</span></label>
-            <input type="text" id="jobTitle" name="jobTitle" autocomplete="organization-title" required />
+            <label for="jobTitle">Role</label>
+            <input type="text" id="jobTitle" name="jobTitle" autocomplete="organization-title" />
           </div>
           <div class="form-row">
             <label for="company">Company</label>
@@ -1302,6 +1325,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="#1e7e34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="8 12 11 15 16 9"/></svg>
         <h3>You're in! 🎉</h3>
         <p>Check your inbox: you'll receive the link to join the July 15 talk shortly. See you live.</p>
+        <a class="cal-link" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=MLC%20Podcast%3A%20Emotional%20Intelligence%20with%20Joshua%20Freedman&amp;dates=20260715T150000Z%2F20260715T160000Z&amp;details=Maurizio%20La%20Cava%20interviews%20Joshua%20Freedman%2C%20live%20on%20the%20MLC%20podcast.&amp;location=Microsoft%20Teams" target="_blank" rel="noopener">+ Add to calendar</a>
       </div>
     </aside>
   </div>
@@ -1428,6 +1452,16 @@
 </section>
 
 <!-- =========================================================
+     CTA INTERMEDIA
+     ========================================================= -->
+<section class="mid-cta">
+  <div class="container">
+    <h2>Ready to spend an hour with a world authority on emotional intelligence?</h2>
+    <a href="#iscriviti" class="cta-primary">Book my spot</a>
+  </div>
+</section>
+
+<!-- =========================================================
      BOOK BANNER (banner 2: solo libro, distinto dallo speaker)
      ========================================================= -->
 <section class="book-banner">
@@ -1541,7 +1575,6 @@
     if (!data.firstName) { form.firstName.classList.add('error'); hasError = true; }
     if (!data.lastName)  { form.lastName.classList.add('error'); hasError = true; }
     if (!validateEmail(data.email)) { form.email.classList.add('error'); hasError = true; }
-    if (!data.jobTitle)  { form.jobTitle.classList.add('error'); hasError = true; }
     if (!data.privacy)   { hasError = true; }
 
     if (hasError) {
