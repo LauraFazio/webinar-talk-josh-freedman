@@ -168,8 +168,8 @@
   }
   .hero .container {
     display: grid;
-    grid-template-columns: 1fr 1.6fr;
-    gap: 48px;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 56px;
     align-items: start;
   }
   @media (max-width: 900px) {
@@ -383,6 +383,8 @@
     border-radius: var(--radius-lg);
     padding: 24px 22px 22px;
     box-shadow: 8px 8px 0 0 var(--mlc-yellow);
+    max-width: 430px;
+    margin-left: auto;
   }
   .hero-form .form-heading {
     font-size: 22px;
@@ -543,13 +545,27 @@
     gap: 56px;
     align-items: center;
   }
+  .book-banner-cover { perspective: 1600px; }
   .book-banner-cover img {
     width: 100%;
     height: auto;
     display: block;
     max-width: 280px;
-    border-radius: 6px;
-    box-shadow: 0 28px 64px -20px rgba(0,0,0,0.85), 0 0 0 1px rgba(255,255,255,0.08);
+    border-radius: 2px 6px 6px 2px;
+    transform: rotateY(-22deg) rotateX(3deg);
+    transform-origin: center left;
+    box-shadow:
+      -12px 0 14px -10px rgba(0,0,0,0.6) inset,
+      16px 22px 30px -10px rgba(0,0,0,0.55),
+      26px 40px 70px -22px rgba(0,0,0,0.9);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+  .book-banner-cover img:hover {
+    transform: rotateY(-8deg) rotateX(1deg);
+  }
+  @media (max-width: 768px) {
+    .book-banner-cover { perspective: none; }
+    .book-banner-cover img { transform: none; }
   }
   .book-banner-eyebrow {
     display: inline-block;
@@ -1154,6 +1170,18 @@
   /* Host (Maurizio) banner: variante chiara, meno prominente dell'ospite */
   .speaker.host { background: var(--mlc-grey-2); border-top: 1px solid var(--mlc-grey-1); }
 
+  /* Icona LinkedIn accanto al nome speaker */
+  .speaker h2 .li-link {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 12px;
+    color: var(--mlc-black);
+    vertical-align: middle;
+    transition: opacity 0.15s ease, transform 0.1s ease;
+  }
+  .speaker h2 .li-link svg { width: 26px; height: 26px; display: block; }
+  .speaker h2 .li-link:hover { opacity: 0.7; transform: translateY(-1px); }
+
   /* Placeholder foto speaker (finché non c'è il file ufficiale in /assets) */
   .photo-placeholder {
     width: 100%;
@@ -1340,7 +1368,7 @@
 
     <div class="speaker-bio">
       <div class="speaker-eyebrow">The guest</div>
-      <h2>Joshua Freedman</h2>
+      <h2>Joshua Freedman<a class="li-link" href="https://www.linkedin.com/in/freedman/" target="_blank" rel="noopener" aria-label="Joshua Freedman on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.73v20.54C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .78 23.2 0 22.22 0z"/></svg></a></h2>
       <div class="role">CEO &amp; co-founder of Six Seconds · Author of <em>Emotion Rules</em></div>
       <p>
         Joshua leads <strong>Six Seconds</strong>, the world's largest network dedicated to
@@ -1378,7 +1406,7 @@
 
     <div class="speaker-bio">
       <div class="speaker-eyebrow">Host</div>
-      <h2>Maurizio La Cava</h2>
+      <h2>Maurizio La Cava<a class="li-link" href="https://www.linkedin.com/in/mauriziolacava/" target="_blank" rel="noopener" aria-label="Maurizio La Cava on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.73v20.54C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .78 23.2 0 22.22 0z"/></svg></a></h2>
       <div class="role">Founder, MLC Presentation Design Consulting · Host of the MLC podcast</div>
       <p>
         On the <strong>MLC podcast</strong>, Maurizio interviews international authors and voices to

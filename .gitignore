@@ -22,6 +22,7 @@ commit.bat
 fix-author.bat
 deploy-github.bat
 push-update.bat
+force-push.bat
 _crlftest.txt
 
 # OS
