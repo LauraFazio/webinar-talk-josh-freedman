@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- =========================================================
+     SEO META TAGS
+     ========================================================= -->
+<title>Emotional Intelligence: Maurizio La Cava interviews Joshua Freedman | July 15, 2026</title>
+<meta name="description" content="Live talk on the MLC podcast. Maurizio La Cava interviews Joshua Freedman, CEO of Six Seconds and bestselling author on emotional intelligence. Wednesday, July 15, 2026, 17:00-18:00 CEST, on Microsoft Teams." />
+<meta name="keywords" content="emotional intelligence, Joshua Freedman, Six Seconds, EQ, Maurizio La Cava, MLC Podcast, active listening, communication, leadership, webinar" />
+<meta name="author" content="MLC Presentation Design Consulting" />
+<link rel="canonical" href="https://webinar-talk-josh-freedman.vercel.app" />
+
+<!-- Open Graph (LinkedIn, Facebook) -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Emotional Intelligence · Maurizio La Cava interviews Joshua Freedman" />
+<meta property="og:description" content="Live talk on the MLC podcast with Joshua Freedman (CEO, Six Seconds). Wednesday, July 15, 2026, 17:00-18:00 CEST, on Microsoft Teams." />
+<meta property="og:image" content="https://webinar-talk-josh-freedman.vercel.app/assets/og-webinar.jpg" />
+<meta property="og:url" content="https://webinar-talk-josh-freedman.vercel.app" />
+<meta property="og:locale" content="en_US" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Emotional Intelligence · live talk with Joshua Freedman" />
+<meta name="twitter:description" content="Maurizio La Cava interviews Joshua Freedman on the MLC podcast. Live Wednesday, July 15, 2026." />
+<meta name="twitter:image" content="https://webinar-talk-josh-freedman.vercel.app/assets/og-webinar.jpg" />
+
+<!-- Schema.org structured data: Event (boost SEO per webinar) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Emotional Intelligence: Maurizio La Cava interviews Joshua Freedman",
+  "description": "Live talk on the MLC podcast. Maurizio La Cava interviews Joshua Freedman, CEO of Six Seconds and bestselling author on emotional intelligence.",
+  "startDate": "2026-07-15T17:00:00+02:00",
+  "endDate": "2026-07-15T18:00:00+02:00",
+  "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "location": { "@type": "VirtualLocation", "url": "https://webinar-talk-josh-freedman.vercel.app" },
+  "image": "https://webinar-talk-josh-freedman.vercel.app/assets/og-webinar.jpg",
+  "organizer": { "@type": "Organization", "name": "MLC Presentation Design Consulting", "url": "https://mlcpresentations.com" },
+  "performer": [
+    { "@type": "Person", "name": "Joshua Freedman" },
+    { "@type": "Person", "name": "Maurizio La Cava" }
+  ],
+  "offers": { "@type": "Offer", "url": "https://webinar-talk-josh-freedman.vercel.app", "price": "0", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "validFrom": "2026-06-26T00:00:00+02:00" }
+}
+</script>
+
+<!-- =========================================================
+     FONTS (Gilroy con fallback Aptos / system)
+     Nota: Gilroy è font proprietario. Sul sito MLC dovrebbe già
+     essere caricato via @font-face. In hosting esterno caricarlo
+     in /fonts/ e linkare qui sotto.
+     ========================================================= -->
+<style>
+  /* @font-face per Gilroy (DA ATTIVARE quando i file font sono caricati sul server) */
+  /*
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-Regular.woff2') format('woff2');
+    font-weight: 400; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-Bold.woff2') format('woff2');
+    font-weight: 700; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-Black.woff2') format('woff2');
+    font-weight: 900; font-style: normal; font-display: swap;
+  }
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-RegularItalic.woff2') format('woff2');
+    font-weight: 400; font-style: italic; font-display: swap;
+  }
+  */
+
+  /* =========================================================
+     MLC BRAND TOKENS
+     ========================================================= */
+  :root {
+    --mlc-black: #000000;
+    --mlc-white: #FFFFFF;
+    --mlc-yellow: #FFDB46;
+    --mlc-grey-3: #4E4E4E;
+    --mlc-grey-2: #F6F6F6;
+    --mlc-grey-1: #E6E6E6;
+
+    --mlc-font: 'Gilroy', 'Aptos', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+
+    --container-max: 1180px;
+    --gutter: 24px;
+    --radius: 4px;
+    --radius-lg: 8px;
+    --transition: 200ms ease;
+  }
+
+  /* =========================================================
+     RESET + BASE
+     ========================================================= */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--mlc-font);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.55;
+    color: var(--mlc-grey-3);
+    background: var(--mlc-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  h1, h2, h3, h4 { color: var(--mlc-black); font-weight: 900; line-height: 1.15; letter-spacing: -0.01em; }
+  strong { font-weight: 700; color: var(--mlc-black); }
+  em { font-style: italic; }
+  a { color: var(--mlc-black); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  img { max-width: 100%; height: auto; display: block; }
+  button { font-family: inherit; cursor: pointer; }
+
+  .container { max-width: var(--container-max); margin: 0 auto; padding: 0 var(--gutter); }
+  section { padding: 96px 0; }
+  @media (max-width: 768px) { section { padding: 64px 0; } }
+
+  /* =========================================================
+     HEADER (logo top-left, brand-mark rule)
+     ========================================================= */
+  .site-header {
+    padding: 24px 0;
+    position: relative;
+  }
+  .site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    color: var(--mlc-black);
+    line-height: 0;
+  }
+  .logo img {
+    height: 32px;
+    width: auto;
+    display: block;
+  }
+  @media (max-width: 600px) {
+    .logo img { height: 26px; }
+  }
+  .brand-mark {
+    width: 100px; height: 4px;
+    background: var(--mlc-yellow);
+    border-radius: 2px;
+  }
+
+  /* =========================================================
+     HERO
+     ========================================================= */
+  .hero {
+    padding: 36px 0 56px;
+    background: var(--mlc-white);
+  }
+  .hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 48px;
+    align-items: start;
+  }
+  @media (max-width: 900px) {
+    .hero { padding: 24px 0 40px; }
+    .hero .container { grid-template-columns: 1fr; gap: 28px; }
+    /* Su mobile: form sopra ai topics così il CTA è subito visibile */
+    .hero-form { order: -1; }
+  }
+  .eyebrow {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--mlc-black);
+    margin-bottom: 20px;
+    padding-bottom: 6px;
+    border-bottom: 3px solid var(--mlc-yellow);
+  }
+  .hero h1 {
+    font-size: clamp(30px, 3.8vw, 46px);
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+  .hero h1 .scribble {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+  }
+  .hero h1 .scribble::before {
+    content: "";
+    position: absolute;
+    left: -6px; right: -6px;
+    bottom: 4px;
+    height: 38%;
+    background: var(--mlc-yellow);
+    border-radius: 4px 8px 6px 10px / 8px 4px 10px 6px;
+    transform: rotate(-1.2deg);
+    z-index: -1;
+    opacity: 0.95;
+  }
+  .hero .lede {
+    font-size: clamp(18px, 1.8vw, 22px);
+    color: var(--mlc-grey-3);
+    margin-bottom: 28px;
+    max-width: 560px;
+  }
+  .meta-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 32px;
+    font-size: 16px;
+    color: var(--mlc-black);
+  }
+  .meta-list .item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 700;
+  }
+  .meta-list .item svg {
+    flex: 0 0 22px;
+    width: 22px; height: 22px;
+  }
+  .cta-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--mlc-yellow);
+    color: var(--mlc-black);
+    font-weight: 900;
+    font-size: 17px;
+    padding: 18px 32px;
+    border: none;
+    border-radius: var(--radius);
+    transition: transform var(--transition), box-shadow var(--transition);
+    text-decoration: none;
+  }
+  .cta-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 0 -2px var(--mlc-black);
+    text-decoration: none;
+  }
+  .cta-primary::after {
+    content: "→";
+    font-weight: 900;
+  }
+
+  /* Lede post-event nella colonna sinistra dell'hero */
+  .hero-resources-lede {
+    font-size: clamp(16px, 1.5vw, 19px);
+    line-height: 1.5;
+    color: var(--mlc-grey-3);
+    margin: 20px 0 0;
+    max-width: 480px;
+  }
+
+  /* Hero CTA "Ottieni le risorse" — bottone primario nella colonna sinistra */
+  .hero-cta {
+    display: block;
+    background: var(--mlc-yellow);
+    color: var(--mlc-black);
+    text-align: center;
+    font-weight: 900;
+    font-size: 18px;
+    padding: 18px 32px;
+    border-radius: var(--radius-md, 8px);
+    border: 2px solid var(--mlc-black);
+    text-decoration: none;
+    margin-top: 28px;
+    box-shadow: 6px 6px 0 0 var(--mlc-black);
+    transition: transform 0.08s ease, box-shadow 0.15s ease;
+  }
+  .hero-cta:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 8px 8px 0 0 var(--mlc-black);
+    text-decoration: none;
+  }
+  .hero-cta::after {
+    content: " →";
+    font-weight: 900;
+  }
+  .hero-cta-note {
+    margin: 12px 0 0;
+    font-size: 13px;
+    color: var(--mlc-grey-3);
+    text-align: center;
+  }
+
+  /* Hero video (registrazione webinar post-event) */
+  .hero-video {
+    position: sticky;
+    top: 20px;
+  }
+  .hero-video .video-card {
+    background: var(--mlc-white);
+    border: 2px solid var(--mlc-black);
+    border-radius: var(--radius-lg);
+    padding: 22px;
+    box-shadow: 8px 8px 0 0 var(--mlc-yellow);
+  }
+  .hero-video .video-heading {
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--mlc-black);
+    margin: 0 0 4px;
+    line-height: 1.2;
+  }
+  .hero-video .video-sub {
+    font-size: 13px;
+    color: var(--mlc-grey-3);
+    margin: 0 0 16px;
+  }
+  .hero-video .video-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: var(--mlc-black);
+    border-radius: var(--radius-md, 8px);
+    overflow: hidden;
+    margin-bottom: 18px;
+  }
+  .hero-video .video-wrap iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
+  .hero-video .resources-cta {
+    display: block;
+    background: var(--mlc-yellow);
+    color: var(--mlc-black);
+    text-align: center;
+    font-weight: 900;
+    font-size: 15px;
+    padding: 14px 18px;
+    border-radius: var(--radius-md, 8px);
+    text-decoration: none;
+    transition: transform 0.05s ease, box-shadow 0.15s ease;
+  }
+  .hero-video .resources-cta:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 0 -1px var(--mlc-black);
+    text-decoration: none;
+  }
+  .hero-video .resources-cta::before {
+    content: "↓ ";
+    font-weight: 900;
+  }
+  .hero-video .resources-note {
+    font-size: 12px;
+    color: var(--mlc-grey-3);
+    text-align: center;
+    margin: 10px 0 0;
+  }
+  @media (max-width: 900px) {
+    .hero-video { position: static; }
+  }
+
+  /* Hero form (deprecated dopo l'evento — manteniamo style per back-compat se serve) */
+  .hero-form {
+    position: sticky;
+    top: 20px;
+  }
+  .hero-form .form-card {
+    background: var(--mlc-white);
+    border: 2px solid var(--mlc-black);
+    border-radius: var(--radius-lg);
+    padding: 24px 22px 22px;
+    box-shadow: 8px 8px 0 0 var(--mlc-yellow);
+  }
+  .hero-form .form-heading {
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--mlc-black);
+    margin: 0 0 4px;
+    line-height: 1.2;
+  }
+  .hero-form .form-sub {
+    font-size: 13px;
+    color: var(--mlc-grey-3);
+    margin: 0 0 6px;
+  }
+  .hero-form .form-urgency {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--mlc-black);
+    background: var(--mlc-yellow);
+    padding: 4px 10px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+  }
+  .hero-form .form-row { margin-bottom: 10px; }
+  .hero-form .form-row label {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  .hero-form .form-row input {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+  .hero-form .form-checkbox {
+    font-size: 12px;
+    margin: 12px 0 14px;
+    gap: 8px;
+  }
+  .hero-form .submit-btn {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 15px;
+  }
+  @media (max-width: 900px) {
+    .hero-form { position: static; }
+  }
+
+  /* Topics list (above the fold "Cosa vedremo in diretta") */
+  .topics-list {
+    margin: 24px 0 28px;
+    padding: 0;
+  }
+  .topics-list .topics-heading {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--mlc-black);
+    margin: 0 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid var(--mlc-yellow);
+    display: inline-block;
+  }
+  .topics-list ul {
+    list-style: none;
+    margin: 0; padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .topics-list li {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 14px;
+    align-items: baseline;
+    padding: 4px 0;
+  }
+  .topics-list li::before {
+    content: "▸";
+    color: var(--mlc-yellow);
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 1;
+  }
+  .topics-list .topic-name {
+    display: block;
+    font-weight: 700;
+    color: var(--mlc-black);
+    font-size: 18px;
+    line-height: 1.3;
+  }
+  .topics-list .topic-desc {
+    display: block;
+    font-size: 15px;
+    color: var(--mlc-grey-3);
+    line-height: 1.45;
+    margin-top: 4px;
+  }
+  @media (max-width: 600px) {
+    .topics-list .topic-name { font-size: 16px; }
+    .topics-list .topic-desc { font-size: 14px; }
+    .topics-list li { grid-template-columns: 20px 1fr; gap: 10px; }
+    .topics-list li::before { font-size: 18px; }
+  }
+  /* Bonus topic: meno prominente del CTA giallo del form, ma comunque distinto */
+  .topics-list li.topic-bonus {
+    padding: 6px 0 6px 14px;
+    margin-top: 6px;
+    border-left: 3px solid var(--mlc-yellow);
+    background: transparent;
+    border-radius: 0;
+  }
+  .topics-list li.topic-bonus::before {
+    content: "+";
+    color: var(--mlc-yellow);
+    font-weight: 900;
+    font-size: 22px;
+  }
+  .topics-list li.topic-bonus .topic-name { color: var(--mlc-black); font-size: 18px; }
+  .topics-list li.topic-bonus .topic-desc { color: var(--mlc-grey-3); font-size: 15px; }
+
+  /* Social proof loghi */
+  .social-proof {
+    background: var(--mlc-white);
+    padding: 24px 0 40px;
+    border-top: 1px solid var(--mlc-grey-1);
+  }
+  .social-proof .social-label {
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--mlc-grey-3);
+    margin: 0 0 20px;
+  }
+  .social-proof .logos-banner {
+    width: 100%;
+    text-align: center;
+  }
+  .social-proof .logos-banner img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Book banner (sezione separata dopo speaker) */
+  .book-banner {
+    background: var(--mlc-black);
+    padding: 80px 0;
+  }
+  .book-banner .container {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 56px;
+    align-items: center;
+  }
+  .book-banner-cover img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 280px;
+    border-radius: 6px;
+    box-shadow: 0 28px 64px -20px rgba(0,0,0,0.85), 0 0 0 1px rgba(255,255,255,0.08);
+  }
+  .book-banner-eyebrow {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--mlc-yellow);
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 3px solid var(--mlc-yellow);
+  }
+  .book-banner h2 {
+    font-size: clamp(28px, 3.2vw, 40px);
+    color: var(--mlc-white);
+    margin: 0 0 12px;
+    line-height: 1.1;
+  }
+  .book-banner-subtitle {
+    font-size: 18px;
+    color: var(--mlc-yellow);
+    font-weight: 700;
+    margin: 0 0 16px;
+    line-height: 1.4;
+  }
+  .book-banner p {
+    font-size: 16px;
+    color: var(--mlc-grey-1);
+    line-height: 1.55;
+    margin: 0;
+  }
+  .book-banner p strong { color: var(--mlc-yellow); }
+  @media (max-width: 768px) {
+    .book-banner { padding: 48px 0; }
+    .book-banner .container { grid-template-columns: 1fr; gap: 28px; }
+    .book-banner-cover { text-align: center; }
+    .book-banner-cover img { max-width: 200px; margin: 0 auto; }
+  }
+
+  /* =========================================================
+     VALUE BLOCK (pitch)
+     ========================================================= */
+  .pitch {
+    background: var(--mlc-grey-2);
+  }
+  .pitch .container {
+    max-width: 820px;
+    text-align: left;
+  }
+  .pitch h2 {
+    font-size: clamp(28px, 3.2vw, 40px);
+    margin-bottom: 24px;
+  }
+  .pitch p {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  .pitch p:last-child { margin-bottom: 0; }
+
+  /* =========================================================
+     FORM SECTION
+     ========================================================= */
+  .form-section {
+    padding: 96px 0;
+  }
+  .form-card {
+    max-width: 640px;
+    margin: 0 auto;
+    background: var(--mlc-white);
+    border: 2px solid var(--mlc-black);
+    border-radius: var(--radius-lg);
+    padding: 48px 40px;
+    position: relative;
+  }
+  .form-card::before { content: none; display: none; }
+  .form-card h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+  .form-card .form-sub {
+    font-size: 15px;
+    margin-bottom: 28px;
+    color: var(--mlc-grey-3);
+  }
+  .form-row {
+    margin-bottom: 16px;
+  }
+  .form-row label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--mlc-black);
+    margin-bottom: 6px;
+    letter-spacing: 0.02em;
+  }
+  .form-row label .req { color: var(--mlc-black); }
+  .form-row input {
+    width: 100%;
+    padding: 14px 16px;
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--mlc-black);
+    background: var(--mlc-white);
+    border: 1.5px solid var(--mlc-grey-1);
+    border-radius: var(--radius);
+    transition: border-color var(--transition);
+  }
+  .form-row input:focus {
+    outline: none;
+    border-color: var(--mlc-black);
+  }
+  .form-row input.error {
+    border-color: #c0392b;
+  }
+  /* Date selector (3 date a scelta) */
+  .date-fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 0 18px;
+  }
+  .date-fieldset legend {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--mlc-black);
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  .date-options {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  @media (min-width: 600px) {
+    .date-options { grid-template-columns: repeat(3, 1fr); }
+  }
+  .date-option {
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+  }
+  .date-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+  }
+  .date-card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 14px 14px;
+    border: 1.5px solid var(--mlc-grey-1);
+    border-radius: var(--radius-md, 8px);
+    background: var(--mlc-white);
+    transition: border-color 0.15s ease, background 0.15s ease, transform 0.05s ease;
+  }
+  .date-option:hover .date-card {
+    border-color: var(--mlc-black);
+  }
+  .date-option input[type="radio"]:checked + .date-card {
+    border-color: var(--mlc-black);
+    background: var(--mlc-yellow);
+  }
+  .date-option input[type="radio"]:focus-visible + .date-card {
+    outline: 2px solid var(--mlc-black);
+    outline-offset: 2px;
+  }
+  .date-day {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--mlc-black);
+    line-height: 1.25;
+  }
+  .date-time {
+    font-size: 12px;
+    color: var(--mlc-grey-3);
+    line-height: 1.3;
+  }
+  .date-option input[type="radio"]:checked + .date-card .date-time {
+    color: var(--mlc-black);
+  }
+  .date-fieldset.error legend {
+    color: #c0392b;
+  }
+  .date-fieldset.error .date-card {
+    border-color: #c0392b;
+  }
+  .form-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--mlc-grey-3);
+    margin: 20px 0 24px;
+    line-height: 1.5;
+  }
+  .form-checkbox input[type="checkbox"] {
+    margin-top: 3px;
+    flex-shrink: 0;
+  }
+  .submit-btn {
+    width: 100%;
+    background: var(--mlc-black);
+    color: var(--mlc-white);
+    border: none;
+    padding: 18px;
+    font-size: 17px;
+    font-weight: 900;
+    border-radius: var(--radius);
+    letter-spacing: 0.02em;
+    transition: background var(--transition);
+  }
+  .submit-btn:hover { background: var(--mlc-grey-3); }
+  .submit-btn:disabled {
+    background: var(--mlc-grey-1);
+    color: var(--mlc-grey-3);
+    cursor: not-allowed;
+  }
+  .form-status {
+    margin-top: 16px;
+    font-size: 14px;
+    text-align: center;
+    min-height: 20px;
+  }
+  .form-status.success { color: #1e7e34; font-weight: 700; }
+  .form-status.error { color: #c0392b; font-weight: 700; }
+
+  .thank-you {
+    text-align: center;
+    padding: 32px 0;
+  }
+  .thank-you svg {
+    width: 64px; height: 64px;
+    margin: 0 auto 20px;
+  }
+  .thank-you h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .thank-you p {
+    color: var(--mlc-grey-3);
+    font-size: 16px;
+  }
+
+  /* =========================================================
+     WHY ATTEND (3 motivi)
+     ========================================================= */
+  .why {
+    background: var(--mlc-white);
+  }
+  .why h2 {
+    font-size: clamp(32px, 3.6vw, 44px);
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .why .why-intro {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 56px;
+    color: var(--mlc-grey-3);
+    font-size: 18px;
+  }
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  @media (max-width: 700px) {
+    .why-grid { grid-template-columns: 1fr; gap: 24px; }
+  }
+  .why-card {
+    background: var(--mlc-white);
+    border: 1.5px solid var(--mlc-grey-1);
+    border-radius: var(--radius-lg);
+    padding: 36px 28px;
+    transition: transform var(--transition), border-color var(--transition);
+  }
+  .why-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--mlc-black);
+  }
+  .why-card .icon-wrap {
+    width: 56px; height: 56px;
+    background: var(--mlc-yellow);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+  .why-card .icon-wrap svg {
+    width: 28px; height: 28px;
+  }
+  .why-card h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+    line-height: 1.25;
+  }
+  .why-card p {
+    font-size: 15px;
+    color: var(--mlc-grey-3);
+  }
+
+  /* =========================================================
+     SPEAKER
+     ========================================================= */
+  .speaker {
+    background: var(--mlc-white);
+  }
+  .speaker .container {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 56px;
+    align-items: center;
+  }
+  @media (max-width: 768px) {
+    .speaker .container { grid-template-columns: 1fr; gap: 32px; text-align: center; }
+  }
+  .speaker-photo {
+    position: relative;
+  }
+  .speaker-photo img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+  }
+  .speaker-photo .accent {
+    position: absolute;
+    top: -16px; right: -16px;
+    width: 60%; height: 60%;
+    background: var(--mlc-yellow);
+    z-index: -1;
+    border-radius: var(--radius-lg);
+  }
+  .speaker-photo .wrap { position: relative; z-index: 1; }
+  .speaker-eyebrow {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    color: var(--mlc-black);
+  }
+  .speaker h2 {
+    font-size: clamp(28px, 3.2vw, 40px);
+    margin-bottom: 8px;
+  }
+  .speaker .role {
+    font-weight: 700;
+    color: var(--mlc-black);
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .speaker p {
+    margin-bottom: 14px;
+    font-size: 16px;
+  }
+  .speaker .credentials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 24px;
+  }
+  .credential-pill {
+    background: var(--mlc-white);
+    border: 1.5px solid var(--mlc-black);
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 100px;
+    color: var(--mlc-black);
+  }
+
+  /* =========================================================
+     BOOK BONUS
+     ========================================================= */
+  .book {
+    background: var(--mlc-black);
+    color: var(--mlc-white);
+  }
+  .book .container {
+    display: block;
+  }
+  .book .book-header {
+    text-align: center;
+    margin-bottom: 56px;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .book .book-header .book-eyebrow {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--mlc-yellow);
+    margin-bottom: 16px;
+  }
+  .book .book-header h2 {
+    font-size: clamp(26px, 3vw, 36px);
+    color: var(--mlc-white);
+    margin: 0;
+    line-height: 1.2;
+  }
+  .bonus-pair {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  }
+  .bonus-item-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: center;
+  }
+  .bonus-item-card.reverse .bonus-image { order: 2; }
+  .bonus-item-card.reverse .bonus-text  { order: 1; }
+  .bonus-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius-lg);
+  }
+  .bonus-text .bonus-item-label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--mlc-yellow);
+    margin-bottom: 8px;
+  }
+  .bonus-text .bonus-item-title {
+    font-size: 26px;
+    font-weight: 900;
+    color: var(--mlc-white);
+    margin: 0 0 14px;
+    line-height: 1.25;
+  }
+  .bonus-text p {
+    color: var(--mlc-grey-1);
+    font-size: 16px;
+    line-height: 1.55;
+    margin-bottom: 12px;
+  }
+  @media (max-width: 768px) {
+    .bonus-item-card { grid-template-columns: 1fr; gap: 24px; }
+    .bonus-item-card.reverse .bonus-image { order: 0; }
+    .bonus-item-card.reverse .bonus-text  { order: 0; }
+  }
+  .book h2, .book h3 { color: var(--mlc-white); }
+  .book .book-eyebrow {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--mlc-yellow);
+    margin-bottom: 16px;
+  }
+  .book h2 {
+    font-size: clamp(28px, 3.2vw, 40px);
+    margin-bottom: 16px;
+  }
+  .book .subtitle {
+    font-style: italic;
+    font-size: 18px;
+    color: var(--mlc-grey-1);
+    margin-bottom: 24px;
+    line-height: 1.4;
+  }
+  .book p { color: var(--mlc-grey-1); font-size: 16px; margin-bottom: 14px; }
+  .bonus-item {
+    margin-top: 32px;
+  }
+  .bonus-item-label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--mlc-yellow);
+    margin-bottom: 6px;
+  }
+  .bonus-item-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--mlc-white);
+    line-height: 1.3;
+    margin: 0 0 12px;
+  }
+  .bonus-callout {
+    margin-top: 28px;
+    padding: 24px;
+    background: var(--mlc-yellow);
+    color: var(--mlc-black);
+    border-radius: var(--radius-lg);
+  }
+  .bonus-callout h3 {
+    color: var(--mlc-black);
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+  .bonus-callout p {
+    color: var(--mlc-black);
+    font-size: 15px;
+    margin: 0;
+  }
+  .book-cover-wrap {
+    position: relative;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  .book-cover-wrap img {
+    border-radius: 4px;
+    box-shadow: 0 32px 64px -16px rgba(0,0,0,0.6);
+  }
+  .book-cover-wrap.placeholder {
+    aspect-ratio: 3 / 4;
+    background: var(--mlc-grey-3);
+    border: 2px dashed var(--mlc-grey-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--mlc-grey-1);
+    font-size: 13px;
+    text-align: center;
+    padding: 16px;
+  }
+
+  /* E-learning bonus visual (sezione bonus) — su card bianca per contrasto su .book nero */
+  .elearning-preview {
+    max-width: 460px;
+    margin: 0 auto;
+    padding: 32px 28px;
+    background: var(--mlc-white);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+  }
+  .elearning-mockup {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* =========================================================
+     FINAL CTA
+     ========================================================= */
+  .final-cta {
+    text-align: center;
+    background: var(--mlc-white);
+  }
+  .final-cta h2 {
+    font-size: clamp(32px, 4vw, 48px);
+    margin-bottom: 16px;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .final-cta p {
+    font-size: 18px;
+    margin-bottom: 32px;
+    color: var(--mlc-grey-3);
+  }
+
+  /* =========================================================
+     FOOTER
+     ========================================================= */
+  footer.site-footer {
+    padding: 40px 0;
+    background: var(--mlc-white);
+    border-top: 1px solid var(--mlc-grey-1);
+    text-align: center;
+    font-size: 13px;
+    color: var(--mlc-grey-3);
+  }
+  footer.site-footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+  footer.site-footer a { color: var(--mlc-grey-3); text-decoration: underline; }
+
+  /* =========================================================
+     UTILITY
+     ========================================================= */
+  .sr-only {
+    position: absolute;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0);
+    white-space: nowrap; border: 0;
+  }
+  .hidden { display: none !important; }
+
+  /* Host (Maurizio) banner: variante chiara, meno prominente dell'ospite */
+  .speaker.host { background: var(--mlc-grey-2); border-top: 1px solid var(--mlc-grey-1); }
+
+  /* Placeholder foto speaker (finché non c'è il file ufficiale in /assets) */
+  .photo-placeholder {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: var(--radius-lg);
+    background: var(--mlc-black);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center; padding: 16px;
+  }
+  .photo-placeholder .ph-initials { font-size: 64px; font-weight: 900; color: var(--mlc-yellow); line-height: 1; }
+  .photo-placeholder .ph-note { font-size: 12px; color: var(--mlc-grey-1); margin-top: 14px; max-width: 220px; }
+
+  /* Placeholder cover libro (3/4) */
+  .cover-placeholder {
+    aspect-ratio: 3 / 4;
+    width: 100%;
+    border-radius: 4px;
+    background: var(--mlc-grey-3);
+    border: 2px dashed var(--mlc-grey-1);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center; padding: 16px;
+    box-shadow: 0 24px 48px -16px rgba(0,0,0,0.45);
+  }
+  .cover-placeholder .cph-title { font-size: 20px; font-weight: 900; color: var(--mlc-white); line-height: 1.2; }
+  .cover-placeholder .cph-note { font-size: 12px; color: var(--mlc-grey-1); margin-top: 12px; }
+
+  /* Data + ora dentro la form card (hero) */
+  .hero-form .form-event { margin: 2px 0 14px; }
+  .hero-form .form-event-date { font-size: 16px; font-weight: 900; color: var(--mlc-black); line-height: 1.25; }
+  .hero-form .form-event-time { font-size: 14px; font-weight: 700; color: var(--mlc-grey-3); margin-top: 2px; }
+</style>
+</head>
+
+<body>
+
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
+<header class="site-header">
+  <div class="container">
+    <a href="https://mlcpresentations.com" class="logo" aria-label="MLC Presentation Design Consulting">
+      <img src="./assets/logo-mlc.svg" alt="MLC Presentation Design Consulting" />
+    </a>
+  </div>
+</header>
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-text">
+      <span class="eyebrow">MLC Podcast</span>
+      <h1>
+        Emotional intelligence: the skill behind every conversation that works.
+      </h1>
+
+      <p class="lede">
+        Maurizio La Cava interviews <strong>Joshua Freedman</strong>, one of the world's foremost
+        experts on emotional intelligence. What it is, why it matters for communication, how to
+        train it.
+      </p>
+
+      <div class="topics-list">
+        <p class="topics-heading">What you'll discover</p>
+        <ul>
+          <li><span class="topic-name">What emotional intelligence really is</span></li>
+          <li><span class="topic-name">The "Emotional Recession": why global EQ is declining</span></li>
+          <li><span class="topic-name">Emotions, trust and decisions: what the data says</span></li>
+          <li><span class="topic-name">How to train emotional intelligence</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <aside class="hero-form" id="iscriviti">
+      <div class="form-card" id="formCard">
+        <h3 class="form-heading">Book your spot</h3>
+        <div class="form-event">
+          <div class="form-event-date">Wednesday, July 15, 2026</div>
+          <div class="form-event-time">17:00 – 18:00 (CEST) · Microsoft Teams</div>
+        </div>
+
+        <form id="webinarForm" novalidate>
+          <div class="form-row">
+            <label for="firstName">First name <span class="req">*</span></label>
+            <input type="text" id="firstName" name="firstName" autocomplete="given-name" required />
+          </div>
+          <div class="form-row">
+            <label for="lastName">Last name <span class="req">*</span></label>
+            <input type="text" id="lastName" name="lastName" autocomplete="family-name" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email <span class="req">*</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" required />
+          </div>
+          <div class="form-row">
+            <label for="jobTitle">Role <span class="req">*</span></label>
+            <input type="text" id="jobTitle" name="jobTitle" autocomplete="organization-title" required />
+          </div>
+          <div class="form-row">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" autocomplete="organization" />
+          </div>
+
+          <label class="form-checkbox">
+            <input type="checkbox" name="privacy" id="privacy" />
+            <span>I accept the <a href="https://www.iubenda.com/privacy-policy/62712785" target="_blank" rel="noopener">privacy policy</a>.</span>
+          </label>
+
+          <button type="submit" class="submit-btn" id="submitBtn">Book my spot</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="thank-you hidden" id="thankYou">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#1e7e34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="8 12 11 15 16 9"/></svg>
+        <h3>You're in! 🎉</h3>
+        <p>Check your inbox: you'll receive the link to join the July 15 talk shortly. See you live.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- =========================================================
+     SOCIAL PROOF — loghi aziende rappresentate tra gli iscritti
+     ========================================================= -->
+<section class="social-proof">
+  <div class="container">
+    <p class="social-label">Our clients</p>
+    <div class="logos-banner">
+      <img src="./assets/Home_client-logos.svg" alt="MLC client logos: companies that chose the method" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     PITCH
+     ========================================================= -->
+<section class="pitch">
+  <div class="container">
+    <h2>Everyone calls it a <em>soft</em> skill. It's the hardest one.</h2>
+    <p>
+      Reducing emotional intelligence to a soft skill is the fastest way to misunderstand it.
+    </p>
+    <p>
+      Across <strong>160+ countries</strong>, Joshua Freedman has measured emotional intelligence,
+      and the data reveals an <strong>"Emotional Recession"</strong>: global EQ is falling, while
+      trust, attention and the ability to listen become the rarest, most in-demand resource inside
+      teams.
+    </p>
+    <p>
+      This is where your work comes in: no communication, sales conversation or presentation works
+      without <strong>reading the person in front of you</strong>. Join Maurizio in this live
+      interview on the MLC podcast, one hour to turn emotional intelligence from a word into a real
+      skill, and walk away knowing how to use it the very next morning.
+    </p>
+  </div>
+</section>
+
+<!-- Form moved into hero (above the fold) -->
+<!-- Sezione "Cosa porterai a casa" eliminata: contenuto coperto da topics list nell'hero -->
+
+
+<!-- =========================================================
+     WHY ATTEND
+     ========================================================= -->
+<!-- Sezione "Cosa porterai a casa" eliminata: contenuto coperto da topics list nell'hero -->
+
+<!-- Sezione Bonus rimossa: per questo talk le risorse sono accennate nella CTA finale. -->
+
+<!-- =========================================================
+     SPEAKER (ospite: Joshua Freedman · conduce: Maurizio La Cava)
+     ========================================================= -->
+<section class="speaker">
+  <div class="container">
+    <div class="speaker-photo">
+      <div class="accent" aria-hidden="true"></div>
+      <div class="wrap">
+        <img src="./assets/Joshua-Freedman-headshot-clip-1.jpg" alt="Joshua Freedman, CEO and co-founder of Six Seconds" />
+      </div>
+    </div>
+
+    <div class="speaker-bio">
+      <div class="speaker-eyebrow">The guest</div>
+      <h2>Joshua Freedman</h2>
+      <div class="role">CEO &amp; co-founder of Six Seconds · Author of <em>Emotion Rules</em></div>
+      <p>
+        Joshua leads <strong>Six Seconds</strong>, the world's largest network dedicated to
+        emotional intelligence, active in over <strong>150 countries</strong>. A Master Certified
+        Coach (ICF) and author of seven books, he created reference psychometric tools (the
+        <strong>SEI</strong> assessment) and leads <em>State of the Heart</em>, the global study that
+        has measured EQ since 2011.
+      </p>
+      <p>
+        He coined the concept of the <strong>"Emotional Recession"</strong>: the steady, measurable
+        decline of emotional intelligence worldwide, and what it means for leadership, trust and the
+        ability to communicate.
+      </p>
+      <div class="credentials">
+        <span class="credential-pill">CEO &amp; co-founder, Six Seconds</span>
+        <span class="credential-pill">Bestselling author</span>
+        <span class="credential-pill">Master Certified Coach (ICF)</span>
+        <span class="credential-pill">EQ in 150+ countries</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     HOST (conduce: Maurizio La Cava)
+     ========================================================= -->
+<section class="speaker host">
+  <div class="container">
+    <div class="speaker-photo">
+      <div class="accent" aria-hidden="true"></div>
+      <div class="wrap">
+        <img src="./assets/maurizio-talk.jpg" alt="Maurizio La Cava, founder of MLC and host of the MLC podcast" />
+      </div>
+    </div>
+
+    <div class="speaker-bio">
+      <div class="speaker-eyebrow">Host</div>
+      <h2>Maurizio La Cava</h2>
+      <div class="role">Founder, MLC Presentation Design Consulting · Host of the MLC podcast</div>
+      <p>
+        On the <strong>MLC podcast</strong>, Maurizio interviews international authors and voices to
+        bring professionals ideas that usually stay abroad. For years he has helped companies and
+        managers communicate better through the <strong>Lean Presentation Design</strong> methodology.
+      </p>
+      <p>
+        An international speaker and author of books translated into several languages, here he steps
+        into the interviewer's chair: direct questions, zero fluff, a conversation you can put to
+        work the next day.
+      </p>
+      <div class="credentials">
+        <span class="credential-pill">Founder, MLC</span>
+        <span class="credential-pill">Host, MLC Podcast</span>
+        <span class="credential-pill">Bestselling author</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     BOOK BANNER (banner 2: solo libro, distinto dallo speaker)
+     ========================================================= -->
+<section class="book-banner">
+  <div class="container">
+    <div class="book-banner-cover">
+      <img src="./assets/Book_Emotion_rules.jpg" alt="Emotion Rules, Joshua Freedman's book cover" />
+    </div>
+    <div class="book-banner-text">
+      <span class="book-banner-eyebrow">The guest's book</span>
+      <h2>Emotion Rules</h2>
+      <p class="book-banner-subtitle">The Science and Practice of Emotional Wisdom — Joshua Freedman's new book (2026).</p>
+      <p>
+        From emotional intelligence to <strong>emotional wisdom</strong>: how to move from "managing"
+        emotions to using them as data to make better decisions. Science, practice and concrete
+        exercises, from the author who measures EQ in over 160 countries.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     FINAL CTA
+     ========================================================= -->
+<section class="final-cta">
+  <div class="container">
+    <h2>An hour with someone who studies emotions for a living.</h2>
+    <a href="#iscriviti" class="cta-primary" id="resourcesBtnFinal">Book my spot</a>
+  </div>
+</section>
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+<footer class="site-footer">
+  <div class="container">
+    <span>&copy; 2026 MLC Presentation Design Consulting</span>
+    <a href="https://www.iubenda.com/privacy-policy/62712785" target="_blank" rel="noopener">Privacy Policy</a>
+    <a href="https://mlcpresentations.com" target="_blank" rel="noopener">mlcpresentations.com</a>
+  </div>
+</footer>
+
+<!-- =========================================================
+     JAVASCRIPT — Form submit + ActiveCampaign integration
+     =========================================================
+     NOTA TECNICA:
+     Per motivi di sicurezza non è possibile chiamare direttamente
+     l'API REST di ActiveCampaign da browser (l'API Key non deve
+     essere esposta lato client e CORS è bloccato).
+
+     SOLUZIONE: il form chiama un endpoint backend
+     (es. PHP/Node/Serverless) che fa da proxy verso ActiveCampaign.
+     Vedi il file webinar-handler.php incluso nel pacchetto.
+
+     CONFIGURAZIONE:
+     Sostituisci il valore di FORM_ENDPOINT con l'URL del tuo
+     endpoint backend dopo averlo deployato.
+     ========================================================= -->
+<script>
+(function() {
+  // ============== CONFIGURAZIONE ==============
+  const CONFIG = {
+    // Vercel Serverless Function (Node.js) in /api/webinar-handler.js
+    FORM_ENDPOINT: '/api/webinar-handler',
+
+    // Singola data dell'evento (deve matchare WEBINAR_DATES in api/webinar-handler.js)
+    WEBINAR_DATE: '2026-07-15',
+    WEBINAR_ID: 'talk-josh-freedman-2026-07-15'
+  };
+  // ============================================
+
+  const form       = document.getElementById('webinarForm');
+  const formCard   = document.getElementById('formCard');
+  const thankYou   = document.getElementById('thankYou');
+  const submitBtn  = document.getElementById('submitBtn');
+  const status     = document.getElementById('formStatus');
+
+  if (!form) return;
+
+  function setStatus(msg, type) {
+    status.textContent = msg;
+    status.className = 'form-status ' + (type || '');
+  }
+
+  function clearErrors() {
+    form.querySelectorAll('input').forEach(i => i.classList.remove('error'));
+  }
+
+  function validateEmail(v) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+  }
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    clearErrors();
+    setStatus('', '');
+
+    const data = {
+      date:      CONFIG.WEBINAR_DATE,
+      firstName: form.firstName.value.trim(),
+      lastName:  form.lastName.value.trim(),
+      email:     form.email.value.trim().toLowerCase(),
+      jobTitle:  form.jobTitle.value.trim(),
+      company:   form.company.value.trim(),
+      privacy:   form.privacy.checked,
+      webinarId: CONFIG.WEBINAR_ID,
+      source: 'landing-talk-josh-freedman'
+    };
+
+    // Client-side validation
+    let hasError = false;
+    if (!data.firstName) { form.firstName.classList.add('error'); hasError = true; }
+    if (!data.lastName)  { form.lastName.classList.add('error'); hasError = true; }
+    if (!validateEmail(data.email)) { form.email.classList.add('error'); hasError = true; }
+    if (!data.jobTitle)  { form.jobTitle.classList.add('error'); hasError = true; }
+    if (!data.privacy)   { hasError = true; }
+
+    if (hasError) {
+      setStatus('Please check the highlighted fields and accept the privacy policy.', 'error');
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
+
+    try {
+      const response = await fetch(CONFIG.FORM_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+
+      if (!response.ok) {
+        throw new Error('Server error: ' + response.status);
+      }
+
+      const result = await response.json().catch(() => ({}));
+
+      if (result.success === false) {
+        throw new Error(result.error || 'Iscrizione non riuscita');
+      }
+
+      // Successo: nascondi form e mostra thank-you
+      formCard.classList.add('hidden');
+      thankYou.classList.remove('hidden');
+      thankYou.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      // Tracking (opzionale): GA4 event
+      if (typeof gtag === 'function') {
+        gtag('event', 'webinar_signup', {
+          webinar_id: CONFIG.WEBINAR_ID,
+          method: 'landing_form'
+        });
+      }
+
+    } catch (err) {
+      console.error('Form submit error:', err);
+      setStatus('Something went wrong. Please try again in a moment or write to us at info@mlcpresentations.com', 'error');
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Book my spot';
+    }
+  });
+
+  // Live validation feedback
+  form.querySelectorAll('input').forEach(input => {
+    input.addEventListener('input', () => {
+      input.classList.remove('error');
+      setStatus('', '');
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
+                                         

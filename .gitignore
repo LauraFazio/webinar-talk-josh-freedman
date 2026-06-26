@@ -1,0 +1,55 @@
+# Vercel
+.vercel/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment & secrets — MAI committare segreti
+.env
+.env.local
+.env.*.local
+*.env
+
+# File obsoleto con API key in chiaro
+webinar-handler.php
+
+# Script locali di setup/deploy (non servono nel repo)
+setup-git.bat
+commit.bat
+fix-author.bat
+deploy-github.bat
+push-update.bat
+_crlftest.txt
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Cache locale del backend (creato da ?setup=1)
+.ac-cache.json
+
+# One-pager interni (non parte della landing pubblica)
+*.pdf
+
+
+# File foto originali NON ottimizzate (la versione webp ottimizzata è nei riferimenti)
+assets/EFI Summit*.jpg
+assets/*-original.jpg
+*.jpg.bak
+
+# Foto originali pesanti / non usate nella landing (teniamo solo le versioni ottimizzate)
+assets/MLC_ShootingApr25_0146_HIGHRES.jpg
+assets/Maurizio_New_picture.png
+assets/Joshua_book.jpg
+assets/maurizio-portrait.webp
+
