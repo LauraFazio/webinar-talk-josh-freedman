@@ -543,27 +543,13 @@
     gap: 56px;
     align-items: center;
   }
-  .book-banner-cover { perspective: 1600px; }
   .book-banner-cover img {
     width: 100%;
     height: auto;
     display: block;
-    max-width: 280px;
-    border-radius: 2px 6px 6px 2px;
-    transform: rotateY(-22deg) rotateX(3deg);
-    transform-origin: center left;
-    box-shadow:
-      -12px 0 14px -10px rgba(0,0,0,0.6) inset,
-      16px 22px 30px -10px rgba(0,0,0,0.55),
-      26px 40px 70px -22px rgba(0,0,0,0.9);
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-  }
-  .book-banner-cover img:hover {
-    transform: rotateY(-8deg) rotateX(1deg);
-  }
-  @media (max-width: 768px) {
-    .book-banner-cover { perspective: none; }
-    .book-banner-cover img { transform: none; }
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 30px 60px -22px rgba(0,0,0,0.65);
   }
   .book-banner-eyebrow {
     display: inline-block;
@@ -1264,8 +1250,9 @@
       </h1>
 
       <p class="lede">
-        Maurizio La Cava interviews <strong>Joshua Freedman</strong>, one of the world's foremost
-        experts on emotional intelligence. Walk away able to read the room, listen with intent, and
+        <strong>Maurizio La Cava</strong> interviews <strong>Joshua Freedman</strong>, one of the
+        world's foremost experts on emotional intelligence. Walk away able to read the room, listen
+        with intent, and
         make your next conversation — or pitch — actually land.
       </p>
 
@@ -1467,7 +1454,7 @@
 <section class="book-banner">
   <div class="container">
     <div class="book-banner-cover">
-      <img src="./assets/Book_Emotion_rules.jpg" alt="Emotion Rules, Joshua Freedman's book cover" />
+      <img src="./assets/emotion-rules-3d.jpg" alt="Emotion Rules, Joshua Freedman's book — 3D render" />
     </div>
     <div class="book-banner-text">
       <span class="book-banner-eyebrow">The guest's book</span>
