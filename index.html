@@ -65,10 +65,18 @@
   header .navcta:hover{background:var(--yellow);}
 
   /* hero */
-  .hero{padding:46px 0 8px; display:grid; grid-template-columns:1.04fr .96fr; gap:56px; align-items:center;}
+  .hero{padding:38px 0 8px;}
+  .hero-head{margin-bottom:24px;}
+  .hero-head .yrule{margin-bottom:14px;}
+  .hero h1{font-size:38px; margin:14px 0 0; max-width:900px;}
+  .hero-body{display:grid; grid-template-columns:1fr; gap:20px; align-items:center;}
   .hero-photo{width:100%; border-radius:14px; display:block; filter:grayscale(1); transition:filter .55s ease; box-shadow:0 18px 50px -22px rgba(0,0,0,.4);}
   .hero-photo:hover{filter:grayscale(0);}
-  .hero h1{font-size:40px; margin:18px 0 18px;}
+  @media(min-width:861px){
+    .hero{padding:46px 0 10px;}
+    .hero h1{font-size:42px;}
+    .hero-body{grid-template-columns:1fr 1fr; gap:50px;}
+  }
   .hero p.lead{font-size:15.5px; line-height:1.68; margin:0 0 14px; color:var(--grey3); max-width:560px;}
   .hero p.lead.tight{font-weight:600; color:#2c2c2c;}
   .leave-label{font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#9a9a9a; margin:22px 0 10px;}
@@ -103,9 +111,9 @@
   .countdown b{font-weight:700;}
   .recnote{background:#fff8e0; border:1px solid #f4e3a8; border-radius:8px; padding:9px 12px; margin-bottom:18px; font-size:12px; color:#6b5a18;}
   label.fld{display:block; font-size:11px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:#9a9a9a; margin-bottom:6px;}
-  input[type=email]{width:100%; padding:13px 14px; border:1.5px solid var(--grey1); border-radius:8px; font-size:15px; font-family:var(--font); margin-bottom:12px; transition:border-color .2s;}
-  input[type=email]:focus{outline:none; border-color:var(--black);}
-  input[type=email].err{border-color:#c0392b;}
+  .card input[type=email], .card input[type=text]{width:100%; padding:13px 14px; border:1.5px solid var(--grey1); border-radius:8px; font-size:15px; font-family:var(--font); margin-bottom:12px; transition:border-color .2s;}
+  .card input[type=email]:focus, .card input[type=text]:focus{outline:none; border-color:var(--black);}
+  .card input.err{border-color:#c0392b;}
   .err-msg{color:#c0392b; font-size:11.5px; margin:-8px 0 12px; display:none;}
   .err-msg.show{display:block;}
   .privacy{font-size:11px; color:var(--grey3); display:flex; gap:8px; align-items:flex-start; margin-bottom:18px; line-height:1.45;}
@@ -167,10 +175,9 @@
   .books .head .eyebrow{color:var(--yellow); margin-bottom:12px;}
   .books .head h3{color:var(--white); font-size:27px;}
   .books .grid{display:flex; gap:34px; flex-wrap:wrap; justify-content:center; max-width:880px; margin:0 auto; align-items:stretch;}
-  .bookcard{flex:1 1 340px; min-width:300px; background:#0d0d0d; border-radius:14px; padding:28px; border:1px solid #2a2a2a; display:flex; gap:20px; align-items:flex-start;}
-  .bookcard.host{border:1px solid var(--yellow);}
-  .bookcard .cover{flex:0 0 92px; height:132px; border-radius:5px; object-fit:cover; display:flex; align-items:center; justify-content:center; text-align:center; font-size:11px; line-height:1.3; padding:8px; overflow:hidden;}
-  .bookcard img.cover{box-shadow:0 12px 30px -14px rgba(0,0,0,.8);}
+  .bookcard{flex:1 1 340px; min-width:300px; background:#0d0d0d; border-radius:14px; padding:28px; border:1px solid #2a2a2a; display:flex; gap:20px; align-items:center; transition:border-color .2s, transform .2s;}
+  .bookcard:hover{border-color:var(--yellow); transform:translateY(-3px);}
+  .bookcard img.cover{flex:0 0 104px; width:104px; height:auto; max-height:150px; object-fit:contain; border-radius:6px; box-shadow:0 14px 30px -14px rgba(0,0,0,.85);}
   .bookcard .lbl{font-size:10px; font-weight:700; letter-spacing:.1em; color:var(--yellow); text-transform:uppercase; margin-bottom:6px;}
   .bookcard h4{color:var(--white); font-size:17px; margin-bottom:5px;}
   .bookcard .auth{font-size:12.5px; color:#9a9a9a; margin-bottom:11px;}
@@ -185,9 +192,11 @@
   footer a:hover{color:var(--black);}
 
   @media(max-width:860px){
-    .hero{grid-template-columns:1fr; gap:26px; padding:30px 0 4px;}
-    .hero h1{font-size:30px;}
-    .hero-photo{max-height:320px; object-fit:cover;}
+    .hero{padding:26px 0 4px;}
+    .hero-head{margin-bottom:14px;}
+    .hero h1{font-size:29px;}
+    .hero-body{gap:16px;}
+    .hero-photo{max-height:340px; object-fit:cover;}
     .hero-cta{margin-top:22px;}
     .booksec{padding:50px 0;}
     .booksec-grid{grid-template-columns:1fr; gap:30px;}
@@ -235,24 +244,26 @@
 
 <!-- HERO -->
 <section class="wrap hero">
-  <div>
-    <img class="hero-photo" src="./assets/hero-podcast.jpg" alt="Maurizio La Cava interviews Joshua Freedman, live on the MLC podcast, with Emotion Rules and Lean Presentation Design on the table">
-  </div>
-  <div>
+  <div class="hero-head">
     <div class="yrule"></div>
     <div class="eyebrow">MLC Podcast, live episode</div>
     <h1>The science and practice of emotions, and how to actually use them.</h1>
-    <p class="lead">Joshua Freedman studies emotional intelligence, or EQ, the ability to read what people actually feel and respond to it well. His global research shows EQ is falling almost everywhere, which means the people who still have it stand out more than ever.</p>
-    <p class="lead tight">Live, one hour, the questions I would ask him myself, not a press kit interview.</p>
-    <div class="leave-label">You will leave able to</div>
-    <ul class="benefits">
-      <li>Read what people actually feel, even when they do not say it, before it costs you the deal or the meeting</li>
-      <li>Use one practical exercise to train your EQ, starting the same week</li>
-      <li>Explain why EQ is the one skill AI cannot do for you</li>
-    </ul>
-    <div class="hero-cta">
-      <button class="cta-btn" onclick="scrollToForm()">Get my free spot &rarr;</button>
-      <span class="hero-cta-note">Free · Live · 1 hour · July 15, 17:00 CEST</span>
+  </div>
+  <div class="hero-body">
+    <img class="hero-photo" src="./assets/hero-podcast.jpg" alt="Maurizio La Cava interviews Joshua Freedman, live on the MLC podcast, with Emotion Rules and Lean Presentation Design on the table">
+    <div class="hero-rest">
+      <p class="lead">Joshua Freedman has measured emotional intelligence (EQ) for decades. His global research shows it is falling almost everywhere, so those who still have it stand out more than ever.</p>
+      <p class="lead tight">Live, one hour. The questions I would actually ask him, not a press-kit interview.</p>
+      <div class="leave-label">You will leave able to</div>
+      <ul class="benefits">
+        <li>Read what people really feel, even when they don't say it</li>
+        <li>Train your EQ with one exercise, starting the same week</li>
+        <li>Use the one skill AI can't do for you</li>
+      </ul>
+      <div class="hero-cta">
+        <button class="cta-btn" onclick="scrollToForm()">Get my free spot &rarr;</button>
+        <span class="hero-cta-note">Free · Live · 1 hour · July 15, 17:00 CEST</span>
+      </div>
     </div>
   </div>
 </section>
@@ -263,11 +274,10 @@
     <div class="booksec-info">
       <div class="yrule"></div>
       <div class="eyebrow">Reserve your seat</div>
-      <h2>One hour, live. Then it is yours to use.</h2>
+      <h2>One hour, live. Then it's yours to use.</h2>
       <ul class="facts">
-        <li><b>Wednesday, July 15, 2026</b></li>
-        <li>17:00 – 18:00 CEST · on Microsoft Teams</li>
-        <li>Free and live. The recording is included if you cannot join.</li>
+        <li><b>Wednesday, July 15, 2026</b> · 17:00–18:00 CEST</li>
+        <li>Free, on Microsoft Teams · recording included</li>
       </ul>
       <div class="countdown"><span id="cd"></span></div>
     </div>
@@ -276,13 +286,16 @@
         <div id="formview">
           <span class="pill">Free · Live · 1 hour</span>
           <h3>Save your seat</h3>
-          <p class="meta">Just your email. The join link comes straight to your inbox.</p>
+          <p class="meta">Your name and email. The join link comes straight to your inbox.</p>
+          <label class="fld" for="name">Your name</label>
+          <input type="text" id="name" placeholder="First name" autocomplete="given-name">
+          <div class="err-msg" id="nameerr">Please enter your name.</div>
           <label class="fld" for="email">Your email</label>
           <input type="email" id="email" placeholder="you@company.com" autocomplete="email">
           <div class="err-msg" id="emailerr">Please enter a valid email.</div>
           <label class="privacy"><input type="checkbox" id="priv"> I accept the <a href="https://www.iubenda.com/privacy-policy/62712785" target="_blank" rel="noopener">privacy policy</a>.</label>
           <button class="cta" id="submitbtn">Get my free spot &rarr;</button>
-          <p class="micro">Just your email. Nothing else.</p>
+          <p class="micro">Name and email. Nothing else.</p>
         </div>
         <div class="success" id="successview">
           <div class="check">&#10003;</div>
@@ -365,8 +378,8 @@
         <div class="desc">From emotional intelligence to <strong style="color:#fff;">emotional wisdom</strong>: how to use emotions as data to make better decisions. Science, practice and concrete exercises, from the author who measures EQ in over 160 countries.</div>
       </div>
     </div>
-    <div class="bookcard host">
-      <div class="cover" style="background:#fff; color:#000; font-weight:800; letter-spacing:.02em;">LEAN PRESENTATION DESIGN</div>
+    <div class="bookcard">
+      <img class="cover" src="./assets/Book_LPD_Cover.webp" alt="Lean Presentation Design, Maurizio La Cava's book">
       <div>
         <div class="lbl">The host's book</div>
         <h4>Lean Presentation Design</h4>
@@ -412,12 +425,16 @@ function scrollToForm(){
 /* form (client-side only, connect to ActiveCampaign on deploy) */
 (function(){
   var btn=document.getElementById('submitbtn'),
+      name=document.getElementById('name'),
       email=document.getElementById('email'),
       priv=document.getElementById('priv'),
-      err=document.getElementById('emailerr');
+      err=document.getElementById('emailerr'),
+      nameerr=document.getElementById('nameerr');
   function valid(e){ return /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e); }
   btn.addEventListener('click', async function(){
-    var v=email.value.trim();
+    var nm=name.value.trim(); var v=email.value.trim();
+    if(!nm){ name.classList.add('err'); nameerr.classList.add('show'); name.focus(); return; }
+    name.classList.remove('err'); nameerr.classList.remove('show');
     if(!valid(v)){ email.classList.add('err'); err.classList.add('show'); email.focus(); return; }
     email.classList.remove('err'); err.classList.remove('show');
     if(!priv.checked){ priv.parentElement.style.color='#c0392b'; return; }
@@ -425,7 +442,7 @@ function scrollToForm(){
     try{
       var resp=await fetch('/api/webinar-handler',{
         method:'POST', headers:{'Content-Type':'application/json'},
-        body:JSON.stringify({ date:'2026-07-15', email:v, privacy:true, source:'landing-talk-josh-freedman', webinarId:'talk-josh-freedman-2026-07-15' })
+        body:JSON.stringify({ date:'2026-07-15', firstName:nm, email:v, privacy:true, source:'landing-talk-josh-freedman', webinarId:'talk-josh-freedman-2026-07-15' })
       });
       var result=await resp.json().catch(function(){return{};});
       if(!resp.ok || result.success===false){ throw new Error(result.error||'error'); }
@@ -439,6 +456,7 @@ function scrollToForm(){
       err.classList.add('show');
     }
   });
+  name.addEventListener('input', function(){ if(name.value.trim()){ name.classList.remove('err'); nameerr.classList.remove('show'); } });
   email.addEventListener('input', function(){
     if(valid(email.value.trim())){ email.classList.remove('err'); err.classList.remove('show'); }
   });
