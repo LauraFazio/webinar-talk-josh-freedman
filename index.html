@@ -170,18 +170,18 @@
   .ctaband button:active, .finalcta button:active{transform:scale(.98);}
 
   /* books */
-  .books{background:var(--black); padding:8px 32px 84px; color:var(--white);}
+  .books{background:var(--grey2); padding:72px 32px 84px; color:var(--black);}
   .books .head{text-align:center; max-width:620px; margin:0 auto 50px;}
-  .books .head .eyebrow{color:var(--yellow); margin-bottom:12px;}
-  .books .head h3{color:var(--white); font-size:27px;}
+  .books .head .eyebrow{color:#9a9a9a; margin-bottom:12px;}
+  .books .head h3{color:var(--black); font-size:27px;}
   .books .grid{display:flex; gap:34px; flex-wrap:wrap; justify-content:center; max-width:880px; margin:0 auto; align-items:stretch;}
-  .bookcard{flex:1 1 340px; min-width:300px; background:#0d0d0d; border-radius:14px; padding:28px; border:1px solid #2a2a2a; display:flex; gap:20px; align-items:center; transition:border-color .2s, transform .2s;}
+  .bookcard{flex:1 1 340px; min-width:300px; background:var(--white); border-radius:14px; padding:28px; border:1px solid var(--grey1); display:flex; gap:20px; align-items:center; transition:border-color .2s, transform .2s; box-shadow:0 10px 30px -22px rgba(0,0,0,.35);}
   .bookcard:hover{border-color:var(--yellow); transform:translateY(-3px);}
-  .bookcard img.cover{flex:0 0 104px; width:104px; height:auto; max-height:150px; object-fit:contain; border-radius:6px; box-shadow:0 14px 30px -14px rgba(0,0,0,.85);}
-  .bookcard .lbl{font-size:10px; font-weight:700; letter-spacing:.1em; color:var(--yellow); text-transform:uppercase; margin-bottom:6px;}
-  .bookcard h4{color:var(--white); font-size:17px; margin-bottom:5px;}
-  .bookcard .auth{font-size:12.5px; color:#9a9a9a; margin-bottom:11px;}
-  .bookcard .desc{font-size:13px; line-height:1.6; color:#bbb;}
+  .bookcard img.cover{flex:0 0 104px; width:104px; height:auto; max-height:150px; object-fit:contain; border-radius:6px; box-shadow:0 14px 30px -16px rgba(0,0,0,.45);}
+  .bookcard .lbl{font-size:10px; font-weight:700; letter-spacing:.1em; color:#9a9a9a; text-transform:uppercase; margin-bottom:6px;}
+  .bookcard h4{color:var(--black); font-size:17px; margin-bottom:5px;}
+  .bookcard .auth{font-size:12.5px; color:var(--grey3); margin-bottom:11px;}
+  .bookcard .desc{font-size:13px; line-height:1.6; color:var(--grey3);}
 
   /* final cta */
   .finalcta{padding:72px 0; text-align:center; max-width:560px; margin:0 auto;}
@@ -192,22 +192,27 @@
   footer a:hover{color:var(--black);}
 
   @media(max-width:860px){
-    .hero{padding:26px 0 4px;}
-    .hero-head{margin-bottom:14px;}
+    .hero{padding:26px 0 10px;}
+    .hero-head{margin-bottom:16px;}
     .hero h1{font-size:29px;}
-    .hero-body{gap:16px;}
+    .hero-body{gap:20px;}
     .hero-photo{max-height:340px; object-fit:cover;}
-    .hero-cta{margin-top:22px;}
-    .booksec{padding:50px 0;}
-    .booksec-grid{grid-template-columns:1fr; gap:30px;}
+    .hero-cta{margin-top:24px;}
+    .booksec{padding:60px 0;}
+    .booksec-grid{grid-template-columns:1fr; gap:36px;}
     #formanchor{max-width:none;}
     .booksec-info .countdown{max-width:none;}
-    .person, .person.rev{grid-template-columns:1fr; gap:20px; text-align:left;}
+    .clients{padding:54px 0 8px;}
+    .band{padding:64px 0;}
+    .band h2{font-size:24px;}
+    .person, .person.rev{grid-template-columns:1fr; gap:22px; text-align:left;}
     .person.rev .pic{order:0;}
     .person .pic{width:160px; height:190px;}
-    .people{padding:56px 0;}
-    .band{padding:54px 0;}
-    .band h2{font-size:24px;}
+    .person{margin-bottom:44px;}
+    .people{padding:64px 0;}
+    .ctaband{padding:60px 22px;}
+    .books{padding:60px 22px 66px;}
+    .finalcta{padding:64px 0;}
     .ctaband h3, .finalcta h3{font-size:22px;}
     .wrap{padding:0 22px;}
     header .tag{display:none;}
@@ -222,8 +227,8 @@
     .card{padding:24px 20px; box-shadow:6px 6px 0 var(--yellow);}
     .booksec-info h2{font-size:23px;}
     .clients img{max-width:100%;}
-    .ctaband{padding:48px 22px;}
-    .books{padding:8px 22px 60px;}
+    .ctaband{padding:54px 22px;}
+    .books{padding:52px 22px 60px;}
     .bookcard{padding:22px;}
   }
 </style>
@@ -247,7 +252,7 @@
   <div class="hero-head">
     <div class="yrule"></div>
     <div class="eyebrow">MLC Podcast, live episode</div>
-    <h1>The science and practice of emotions, and how to actually use them.</h1>
+    <h1>The science and practice of emotions: how to actually use them</h1>
   </div>
   <div class="hero-body">
     <img class="hero-photo" src="./assets/hero-podcast.jpg" alt="Maurizio La Cava interviews Joshua Freedman, live on the MLC podcast, with Emotion Rules and Lean Presentation Design on the table">
@@ -375,7 +380,7 @@
         <div class="lbl">The guest's book</div>
         <h4>Emotion Rules</h4>
         <div class="auth">Joshua Freedman, 2026</div>
-        <div class="desc">From emotional intelligence to <strong style="color:#fff;">emotional wisdom</strong>: how to use emotions as data to make better decisions. Science, practice and concrete exercises, from the author who measures EQ in over 160 countries.</div>
+        <div class="desc">From emotional intelligence to <strong>emotional wisdom</strong>: how to use emotions as data to make better decisions. Science, practice and concrete exercises, from the author who measures EQ in over 160 countries.</div>
       </div>
     </div>
     <div class="bookcard">
