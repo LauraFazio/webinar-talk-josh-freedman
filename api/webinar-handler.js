@@ -145,8 +145,8 @@ export default async function handler(req, res) {
 
   // ===== Validate =====
   const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!firstName || !lastName || !privacy || !emailRe.test(email)) {
-    return res.status(422).json({ success: false, error: 'Campi mancanti o non validi' });
+  if (!privacy || !emailRe.test(email)) {
+    return res.status(422).json({ success: false, error: 'Email o consenso privacy mancanti' });
   }
   const selectedTagName = WEBINAR_DATES[date];
   if (!selectedTagName) {
